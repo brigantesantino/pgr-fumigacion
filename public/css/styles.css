@@ -1,0 +1,423 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    display: flex;
+    padding: 5%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+    justify-content: center;
+    position: relative;
+    left: 40px;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+    display: none;
+    justify-content: space-around;
+}
+header ul{
+    display:flex
+}
+header ul li{
+    list-style-type: none;
+    margin: 0px 10px;
+    font-size: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit{
+    background-color: white;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+.main-article h4.description{
+    display: none;
+    margin-top: 20px;
+}
+.main-article:hover h4.description{
+  display: block;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+.main-article:hover i{
+    transform: rotate(-90deg);
+    transition-duration: 400ms;
+}
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+}
+.button-send{
+    color: white;
+    border: solid 2px white;
+    background-color: blue;
+    padding: 5px;
+    border-radius: 15%;
+    transition: 200ms;
+}
+
+.button-clear{
+    color: white;
+    border: solid 2px white;
+    background-color: blue;
+    padding: 5px;
+    border-radius: 15%;
+    transition: 200ms;
+}
+
+.button-clear:hover,.button-send:hover {
+    color: blue;
+    background-color: white ;
+    border: solid 2px blue;
+}
+.login .loginform{
+    display: flex;
+    justify-content: center;
+
+}
+main.login .username{
+border-top: none;
+border-left: none;
+border-color:rgb(250, 206, 85) ;
+margin: 10px;
+width: 100%;
+}
+main.login .password{
+border-top: none;
+border-left: none;
+border-color:rgb(250, 206, 85) ;
+margin: 10px;   
+width: 100%;
+}
+main.login .send{
+    display: flex;
+    position: relative;
+    top:10px;
+    left: 65px;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 200ms;
+    color: white;
+    background-color: blue ;
+    border: solid 2px white;
+}
+main.login .send:hover{
+ 
+    color: blue;
+    background-color: white ;
+    border: solid 2px blue;
+}
+
+.register form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.register .data{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+}
+.register .name{
+    border-top: none;
+border-left: none;
+border-color:rgb(250, 206, 85) ;
+margin: 10px;  
+}
+.register .username{
+    border-top: none;
+border-left: none;
+border-color:rgb(250, 206, 85) ;
+margin: 10px;  
+}
+.register .mail{
+    border-top: none;
+border-left: none;
+border-color:rgb(250, 206, 85) ;
+margin: 10px;  
+}
+.register .birthday{
+    border-top: none;
+border-left: none;
+border-color:rgb(250, 206, 85) ;
+margin: 10px;  
+width: 60%;
+}
+.register .date{
+    border-top: none;
+border-left: none;
+border-color:rgb(250, 206, 85) ;
+margin: 10px;  
+width: 60%;
+}
+.register .addres{
+    border-top: none;
+border-left: none;
+border-color:rgb(250, 206, 85) ;
+margin: 10px;  
+width: 60%; 
+}
+.register .profile{
+    width: 60%; 
+}   
+
+.register h4{
+    border-top: none;
+    border-left: none;
+    border-color:rgb(250, 206, 85) ;
+    margin: 10px;  
+}
+.register .interests{
+    width: 60%;
+}
+.register .password{
+    display: flex;
+    flex-direction: column;
+    width: 60%;  
+}
+.register .pass{
+    border-top: none;
+    border-left: none;
+    border-color:rgb(250, 206, 85) ;
+    margin: 10px;  
+}
+.register .confirmpassword{
+    border-top: none;
+    border-left: none;
+    border-color:rgb(250, 206, 85) ;
+    margin: 10px;
+}
+.register .file{
+    width: 60%;
+}
+.register .send{
+    display: flex;
+}
+footer{
+    position: relative;
+    bottom: 0px;
+}
+footer ul li{
+    list-style-type: none;
+}
+footer ul{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    margin: 12px;
+}
+footer .information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer .fa-credit-card{
+    color: blue;
+    transition: 200ms;
+}
+footer .fa-credit-card:hover{
+    color:green
+}
+footer .fa-user-shield{
+    color: blue;
+    transition: 200ms;
+}
+footer .fa-user-shield:hover{
+    color:green
+}
+footer .fa-gift{
+    color: blue;
+    transition: 200ms;
+}
+footer .fa-gift:hover{
+    color:green
+}
+@media(min-width:768px){
+    header nav{
+        display:flex
+    }
+    div.burger-menu{
+        display:none
+    } 
+}
+@media(min-width:1024px){
+    footer ul{
+        display: flex;
+        flex-direction: row;
+    }
+}
