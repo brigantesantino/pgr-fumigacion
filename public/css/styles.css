@@ -16,7 +16,13 @@ h3{
 p{
     font-size: 12px;
 }
-
+div.top-header div.submit{
+    background-color: transparent;
+    border: none;
+}
+div.top-header div.fa-fa-search{
+    font-size: 30px;
+}
 div.top-header{
     display: flex;
     padding: 5%;
@@ -26,6 +32,9 @@ header div.top-header p{
     width: 100%;
     text-align: center;
     margin-top: 10px;
+}
+div.top-header .form .input{
+    margin-right: 5px;
 }
 
 header{
@@ -186,38 +195,7 @@ article div.main-article{
     padding: 15px;
 }
 
-@media (min-width: 361px){
-    main section article .description{
-        display: block;
-    }
 
-    main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
-    main section div.products{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    
-    main section div.products article{
-        width: 45%;
-    }
-
-    .price,
-    .discount{
-        width: 50%;
-    }
-}
-
-@media (min-width: 769px){
-    main section div.products article{
-        width: 22%;
-    }
-}
 .button-send{
     color: white;
     border: solid 2px white;
@@ -419,5 +397,37 @@ footer .fa-gift:hover{
     footer ul{
         display: flex;
         flex-direction: row;
+    }
+}
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
     }
 }
