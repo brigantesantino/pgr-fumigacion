@@ -22,10 +22,15 @@ div.top-header div.submit{
 }
 div.top-header div.fa-fa-search{
     font-size: 30px;
+    margin-top: 50px;
+    margin right: 50px;
 }
 div.top-header{
     display: flex;
+    flex-wrap: wrap;
     padding: 5%;
+    background-color: #EAC926;
+    z-index: 2;
 }
 
 header div.top-header p{
@@ -34,9 +39,11 @@ header div.top-header p{
     margin-top: 10px;
 }
 div.top-header .form .input{
-    margin-right: 5px;
+    margin-right: 50px;
+    width: 100%;
+    margin-top: 50px;
+    margin
 }
-
 header{
     background-color: #EAC926;
 }
@@ -61,20 +68,25 @@ header .form{
 header nav{
     font-size: 12px;
     margin-left: 20px;
-    display: none;
     justify-content: space-around;
 }
 header ul{
-    display:flex
+    margin: 10px;
+    width: 90%;
+    display:flex;
+    font-size: 7px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 header ul li{
-    list-style-type: none;
+    display: flex;
     margin: 0px 10px;
-    font-size: 20px;
+    font-size: 12px;
+    flex-direction: row;
 }
 
 header ul li a{
-    text-decoration: none;
+    
     color: #000;
 }
 
@@ -389,6 +401,9 @@ footer .fa-gift:hover{
     header nav{
         display:flex
     }
+    header{
+        height: 300px;
+    }
     div.burger-menu{
         display:none
     } 
@@ -398,12 +413,28 @@ footer .fa-gift:hover{
         display: flex;
         flex-direction: row;
     }
+    header{
+        height: 500px;
+    }
 }
 @media (min-width: 361px){
     main section article .description{
         display: block;
     }
-
+    i.fa.fa-search{
+        position: relative;
+        right: 45px;
+        top: 25px;
+    }
+    header .form{
+        width: 50%;
+        height: 15px;
+        font-size: 10px;
+    }
+    header .form div.input{
+        height: 19px;
+        width: 100%;
+    }
     main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
