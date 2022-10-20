@@ -430,6 +430,18 @@
       z-index: 1;
       height: 4%;
     }
+    .card{
+      align-items: center;
+      margin: 2.5rem 1rem 40px 0.4rem;
+      padding:0 2rem 3rem 2rem;
+      border: #1f1f1f solid 1px;
+      display: flex;
+      width: 80%;
+      height: 440px;
+      flex-direction: column;
+      transition: all 300ms;
+      border-radius: 5px;
+    }
   .hori-selector{
       margin-top: 0px;
       margin-left: 10px;
@@ -992,7 +1004,7 @@
     display: flex;
     justify-content: center;
     background-color: #5c5c5c;
-    background-image: url(/PGR-FUMIGACIONES/views/ants5grayblack.jpg);
+    /* background-image: url(/images/ants5grayblack.jpg); */
     background-size: 450px;
   }
   footer{
@@ -1112,7 +1124,7 @@
     }
     .card{
     align-items: center;
-    margin: 2.5rem 1rem 0px 0.4rem;
+    margin: 2.5rem 1rem 50px 0.4rem;
     padding:0 2rem 3rem 2rem;
     border: #bebebe solid 1px;
     display: flex;
@@ -1325,6 +1337,24 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
+    }
+    div.social-media{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 70%;
+      height: 4rem;
+      text-decoration: none;
+      margin: 0 0 5.5rem 0;
+    }
+    div.footer-back{
+      width: 100%;
+      height: 37rem;
+      display: flex;
+      justify-content: center;
+      background-color: #5c5c5c;
+      /* background-image: url(/images/ants5grayblack.jpg); */
+      background-size: 450px;
     }
   }
   
