@@ -571,15 +571,7 @@
   margin: 0 3rem;
   }
   
-  .img_main{
-  width: 400px;
-  margin-right: 50px;
-  animation: movimiento 2s infinite linear;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  display: none;
-  }
+
   
   
   select{
