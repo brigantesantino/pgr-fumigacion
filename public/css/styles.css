@@ -605,23 +605,7 @@
     overflow: hidden;
     z-index: -1;
     height: 100%;
-  }
-  
-  .img_back1{
-    position: relative;
-    z-index: -1;
-    top: 1000px;
-    left: 1000px;
-    animation: rotation 120s infinite linear;
-  }
-  .img_back2{
-    position: relative;
-    right: 1000px;
-    z-index: -1;
-    animation: rotation 120s infinite linear;
-  }
-  
-  
+  }  
   a:link{
     list-style: none;
     text-decoration: none;
@@ -710,6 +694,7 @@
     text-transform: uppercase;
     color: transparent;
     -webkit-text-stroke: 1px var(--text-stroke-color);
+    border: #000000 solid 3px;
   }
   /* this is the text, when you hover on button */
   .hover-text {
@@ -1012,7 +997,7 @@
   color: #181818;
   }
   h2.titulo{
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 550;
   text-align: center;
   color: #131313;
@@ -1216,17 +1201,7 @@
       justify-content: center;
       margin: -10% 0 0 0;
     }
-    .img_main{
-        display: block;
-      animation: movimientoRes 2s infinite linear;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      margin: 0px;
-      width: 250px;
-      position: relative;
-      bottom: -1.4rem;
-    }
+
     .menu-wrapper{
       display: flex;
       align-items: center;
