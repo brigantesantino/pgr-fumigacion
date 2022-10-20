@@ -1,9 +1,15 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:  font-family: 'Montserrat', sans-serif;;
     scroll-behavior: smooth;
     
+  }
+  div{
+    cursor: default;
+  }
+  span{
+    cursor: default;
   }
   .body{
     display: flex;
@@ -72,6 +78,7 @@
     text-decoration:none;
     color: #000000;
     font-size: large;
+    display: none;
   }
   header div.info p.faqs{
     margin:  0.8rem 50px 0 10px;
@@ -308,10 +315,28 @@
     transition: all 300ms;
     border-radius: 5px;
   }
-  .card:hover{
-    box-shadow: 1px 1px 21px 8px rgb(231, 131, 17);
-    -webkit-box-shadow: 1px 1px 21px 8px rgb(231, 131, 17);
-    -moz-box-shadow: 1px 1px 21px 8px rgb(231, 131, 17);
+  .red:hover{
+    box-shadow: 1px 1px 21px 8px #ec2e41;
+    -webkit-box-shadow: 1px 1px 21px 8px #ec2e41;
+    -moz-box-shadow: 1px 1px 21px 8px #ec2e41;
+    transition: all ease 300ms;
+  }
+  .orange:hover{
+    box-shadow: 1px 1px 21px 8px rgb(255, 123, 0);
+    -webkit-box-shadow: 1px 1px 21px 8px rgb(255, 123, 0);
+    -moz-box-shadow: 1px 1px 21px 8px rgb(255, 123, 0);
+    transition: all ease 300ms;
+  }
+  .blue:hover{
+    box-shadow: 1px 1px 21px 8px #47b0e9;
+    -webkit-box-shadow: 1px 1px 21px 8px #47b0e9;
+    -moz-box-shadow: 1px 1px 21px 8px #47b0e9;
+    transition: all ease 300ms;
+  }
+  .green:hover{
+    box-shadow: 1px 1px 21px 8px green;
+    -webkit-box-shadow: 1px 1px 21px 8px green;
+    -moz-box-shadow: 1px 1px 21px 8px green;
     transition: all ease 300ms;
   }
   .card img{
@@ -488,7 +513,7 @@
     position: fixed;
     right: -250px;
     top: 0;
-    background: #32cefdd7;
+    background: #e78311c9;
     z-index: 3;
     transition: 0.5s;
     
@@ -536,6 +561,13 @@
   }
   .social-media{
     height: auto;
+  }
+  div.rights{
+    padding: 1rem 0;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    height: 70%;
   }
   }
   
@@ -730,7 +762,7 @@
     background-color: #0f518e93;
     transition: all 300ms;
     color: rgb(196, 196, 196);
-    border: #8b8b8b60 solid 2px;
+    border:inset #8b8b8b60 solid 2px;
   }
   .preg_main{
     color: rgb(255, 255, 255);
@@ -764,7 +796,7 @@
     border: solid 1px #c9862f9f;
   }
   #colorBlanco{
-    color: rgba(185, 185, 185, 0.87);
+    color: rgb(255, 255, 255);
   }
   #colorBlanco:hover{
     color: rgb(255, 255, 255);
@@ -1025,11 +1057,7 @@
   }
   
   div.rights{
-    padding: 1rem 0;
-    position: absolute;
-    display: flex;
-    align-items: flex-end;
-    height: 70%;
+    padding: 0 0 1rem 0;
   }
   div.wpp{
     display: flex;
@@ -1100,6 +1128,18 @@
   align-items: center;
   justify-content: space-between;
   
+  }
+  p.mail-info{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: large;
+    z-index: 1;
+    text-transform: lowercase;
+    cursor: text;
+  }
+  .contact-info{
+    text-transform: none;
   }
   /* Footer */
   @media (max-width:768px) {
@@ -1261,7 +1301,7 @@
       font-size: 2em;
       width: 90%;
       text-align: center;
-      color: #000000;
+      color: #ffffff;
     }
     .service_main{
       font-size: 1em;
