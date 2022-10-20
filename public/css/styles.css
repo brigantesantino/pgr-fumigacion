@@ -412,6 +412,15 @@
   .img_main3{
       width: 150px;
     }
+    footer{
+      border-top: rgb(231, 131, 17) solid 2px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 70%;
+      margin: 2rem 0 0 0;
+    }
   }
   @media (max-width: 768px){
   #navbarSupportedContent ul li a{
@@ -508,6 +517,25 @@
   }
   .banner{
     display: none;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+  .wpp{
+    margin: 1rem 0;
+  }
+  .linkedin{
+    margin: 1rem 0;
+  }
+  .mail{
+    margin: 1rem 0;
+  }
+  .social-media{
+    height: auto;
   }
   }
   
@@ -1007,15 +1035,7 @@
     /* background-image: url(/images/ants5grayblack.jpg); */
     background-size: 450px;
   }
-  footer{
-    border-top: rgb(231, 131, 17) solid 2px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-    margin: 2rem 0 0 0;
-  }
+
   .footer-button-home{
   color: #63799E;
   
@@ -1029,12 +1049,25 @@
   
   div.rights{
     padding: 1rem 0;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    height: 70%;
   }
   div.wpp{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
   
+  }
+  div.mail{
+    display: flex;
+    justify-content: center;
+  }
+  div.linkedin{
+    display: flex;
+    justify-content: center;
+
   }
   a{
     text-decoration: none;
@@ -1044,9 +1077,9 @@
     flex-direction: row;
     justify-content: space-between;
     width: 70%;
-    height: 4rem;
+    height: 100%;
     text-decoration: none;
-    margin: 0 0 5.5rem 0;
+    margin: 0 0 0rem 0;
   }
   .linkedin{
     display: flex;
@@ -1116,11 +1149,13 @@
     div.cards-container{
       align-items: center;
       justify-content: center;
-      margin: 11rem 0 0 0;
+      margin: 18rem 0 0 0;
       display: flex;
       flex-direction: row;
       width: 80%;
       flex-wrap: wrap;
+      height: 100%;
+      border-top: #63799E 1px solid;
     }
     .card{
     align-items: center;
@@ -1177,6 +1212,17 @@
     }
     .img_main3{
       width: 100px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+
+    }
+    div.cont_ilustration2-footer{
+      width: 100%;
+      display: flex;
+      position: absolute;
+      justify-content: center;
+      margin: -10% 0 0 0;
     }
     .img_main{
         display: block;
@@ -1341,11 +1387,10 @@
     div.social-media{
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-around;
       width: 70%;
-      height: 4rem;
+      height: 60%;
       text-decoration: none;
-      margin: 0 0 5.5rem 0;
     }
     div.footer-back{
       width: 100%;
