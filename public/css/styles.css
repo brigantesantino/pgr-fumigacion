@@ -1166,7 +1166,7 @@
     div.cards-container{
       align-items: center;
       justify-content: center;
-      margin: 18rem 0 0 0;
+      margin: 5rem 0 0 0;
       display: flex;
       flex-direction: row;
       width: 80%;
@@ -1312,6 +1312,7 @@
       margin-top: 0px;
     }
     .contenedorCards_about{
+      display: none;
       padding: 2% 10% 4% 14%;
       margin: 0%;
       flex-wrap: wrap;
